@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+.header-block-info
+{
+  background-color: #404040;
+}
+
+main
+{
+
+  background: url(img/фон_1_блока.png)
+}
