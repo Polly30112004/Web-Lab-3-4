@@ -34,11 +34,10 @@
   background-color: #404040;
   color: white; 
   display: flex; 
-  justify-content: flex-start; /* Сдвигаем текст влево */
+  justify-content: center; 
   align-items: center;
   font-size: 0.75rem;
-  position: relative;
-  padding-left: 16.35rem; /* Отступ слева для текста */
+
 }
 
 .header-block-info {
@@ -50,11 +49,7 @@
 }
 
 
-.header-button-order {
-  position: absolute;
-  right: 15rem; 
 
-}
 
 .button-order {
   font-size: 1rem;
@@ -68,22 +63,24 @@
   background-color: #E05100;
 }
 
-/* Адаптивность? думать */
-@media (max-width: 768px) {
-  .header-info {
-      padding-left: 1.5rem; /* Уменьшаем отступ на маленьких экранах */
-  }
 
-  .header-button-order {
-      right: 2rem; /* Уменьшаем сдвиг на маленьких экранах */
-  }
 
-  .header-block-info {
-      gap: 1rem;
-      margin-right: 0;
-  }
+
+.header-button-order 
+{
+  margin-left: 3vw;
 }
 
+
+
+
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 8px;
+}
 
 .nav
 {
@@ -142,8 +139,7 @@ gap: 5.1vw;
   flex-direction: column;
   justify-content: center; 
   align-items: center;
-  gap: 30px;
-  
+  gap: 30px; 
 }
 
 .h1
@@ -170,13 +166,71 @@ gap: 5.1vw;
   background-color:#E05100;
 }
 
-
-
-
-@media (max-width: 768px)
+@media screen and (width < 1150px)
 {
-  .header__menu_button
+ .header-block-info img
+ {
+   display: none;
+ }
+ .block1-inside
+ {
+  width: 70%;
+ }
+ .h1
+ {
+  font-size: 36px;
+ }
+
+}
+
+
+@media screen and (width < 1020px)
+{
+ .nav img
+ {
+  display: none;
+ }
+ .header-block-info {
+  margin-right: 2.5rem;
+ }
+ .button-order
+ {
+   padding: 0.8rem 1vh;
+ }
+ .button-order
+ {
+  width: 170px;
+ }
+ .header-button-order
+ {
+   padding: 0.8rem 0.8rem;
+ }
+ .h1 {
+  font-size: 32px; 
+}
+.block1-inside {
+  width: 80%; 
+}
+}
+
+@media screen and (width < 769px) {
+  .nav {
+    display: none;
+  }
+  .header-block-info {
+    display: none; 
+  }
+  .button-order {
+    display: none;
+  }
+  .h1 {
+    font-size: 24px; 
+  }
+  .block1-inside {
+    width: 95%;
+  }
+  .description
   {
-      display: block; 
+    font-size: 12px;
   }
 }
