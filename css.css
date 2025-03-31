@@ -178,8 +178,7 @@ flex-direction: column;
 justify-content: center; 
 align-items: center;
 gap:60px;
-margin: 7.75vw 0vw;
-
+margin: 7.2vw 0vw;
 }
 
 .products {
@@ -200,6 +199,7 @@ margin: 7.75vw 0vw;
 {
   height: 114px;
   width: 170px;
+  margin-top: 1.7rem;
 }
 
 .card-description
@@ -208,12 +208,12 @@ font-size: 14px;
 color:black;
 font-weight: 700;
 text-align: center;
-margin-top: 1rem;
+margin-top: 1.55rem;
 }
 
 .card
 {
-   border-radius:20px;
+   border-radius:30px;
    height: 264px;
    width: 240px;
    background-color: white;
@@ -222,8 +222,8 @@ margin-top: 1rem;
    justify-content: center;
    align-items: center;
    gap: 10px;
-   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
+   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  }
 
 
 @media screen and (width < 1150px)
@@ -240,6 +240,11 @@ margin-top: 1rem;
  {
   font-size: 36px;
  }
+ .h2
+{
+
+  font-size: 30px;
+}
 
 }
 
@@ -267,6 +272,8 @@ margin-top: 1rem;
  .h1 {
   font-size: 32px; 
 }
+.h2
+
 .block1-inside {
   width: 80%; 
 }
@@ -295,5 +302,9 @@ margin-top: 1rem;
   .header__menu_button 
   {
     display: block;
+  }
+  .h2
+  {
+    font-size: 20px;
   }
 }
