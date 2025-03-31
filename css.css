@@ -242,7 +242,6 @@ margin-top: 1.55rem;
  }
  .h2
 {
-
   font-size: 30px;
 }
 
@@ -272,10 +271,8 @@ margin-top: 1.55rem;
  .h1 {
   font-size: 32px; 
 }
-.h2
-
 .block1-inside {
-  width: 80%; 
+  width: 90%;
 }
 }
 
@@ -303,8 +300,18 @@ margin-top: 1.55rem;
   {
     display: block;
   }
+
+}
+@media screen and (width < 600px) {
+
   .h2
   {
     font-size: 20px;
   }
+  .button
+  {
+  height: 50px;
+  width: 230px;
+  }
+
 }
