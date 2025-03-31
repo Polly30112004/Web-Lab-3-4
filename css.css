@@ -1,17 +1,182 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box;  
   font-family: Montserrat;
 }
 
-.header-block-info
-{
-  background-color: #404040;
+.body {
+  font-size: 16px;
+
+  }
+
+.header {
+  width: 100%;
 }
 
-main
+/*думать */
+.header__menu_button
+{
+  background: none;
+  border: none;
+  display: none;
+  font-size: 1.2rem;
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+
+}
+
+.header-info {
+  height: 80px;
+  background-color: #404040;
+  color: white; 
+  display: flex; 
+  justify-content: flex-start; /* Сдвигаем текст влево */
+  align-items: center;
+  font-size: 0.75rem;
+  position: relative;
+  padding-left: 16.35rem; /* Отступ слева для текста */
+}
+
+.header-block-info {
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  gap: 1.7rem;
+  margin-right: 1.7rem;
+}
+
+
+.header-button-order {
+  position: absolute;
+  right: 15rem; 
+
+}
+
+.button-order {
+  font-size: 1rem;
+  font-weight: 700;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  border-radius: 100px;
+  padding: 0.8rem 3vw;
+  color: white;
+  background-color: #E05100;
+}
+
+/* Адаптивность? думать */
+@media (max-width: 768px) {
+  .header-info {
+      padding-left: 1.5rem; /* Уменьшаем отступ на маленьких экранах */
+  }
+
+  .header-button-order {
+      right: 2rem; /* Уменьшаем сдвиг на маленьких экранах */
+  }
+
+  .header-block-info {
+      gap: 1rem;
+      margin-right: 0;
+  }
+}
+
+
+.nav
+{
+height: 80px;
+background-color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 5.1vw;
+}
+
+.menu
+{
+  display: flex;
+  align-items: center;
+}
+
+.list 
+{
+  display: flex; 
+  list-style-type: none; 
+  gap: 2.8vw; 
+}
+
+.menu-link 
+{
+  color: black;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.main
 {
 
-  background: url(img/фон_1_блока.png)
+  /* пока пусто*/
+
+}
+
+.block1
+{
+  background: url(img/фон_1_блока.png);
+  background-size: cover;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+  color: white;
+  height: 530px;
+}
+
+.block1-inside
+{
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  gap: 30px;
+  
+}
+
+.h1
+{
+  font-size: 40px;
+  font-weight: 700;
+}
+.description
+{
+  font-size: 14px;  
+
+}
+
+.button
+{
+  font-weight: 700;
+  justify-content:center;
+  align-items: center;
+  border-radius: 70px;
+  height: 60px;
+  width: 240px;
+  font-size: 1rem;
+  color: white;
+  background-color:#E05100;
+}
+
+
+
+
+@media (max-width: 768px)
+{
+  .header__menu_button
+  {
+      display: block; 
+  }
 }
