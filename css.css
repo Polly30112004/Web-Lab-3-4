@@ -5,9 +5,8 @@
   font-family: Montserrat;
 }
 
-.body {
+body {
   font-size: 16px;
-
   }
 
 .header {
@@ -73,15 +72,6 @@
 
 
 
-
-
-.products {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  gap: 8px;
-}
-
 .nav
 {
 height: 80px;
@@ -113,16 +103,12 @@ gap: 5.1vw;
   font-size: 0.75rem;
 }
 
-.main
-{
-
-  /* пока пусто*/
-
-}
 
 .block1
 {
   background: url(img/фон_1_блока.png);
+  object-fit: cover; 
+  flex-shrink: 0; 
   background-size: cover;
   display: flex;
   justify-content: center; 
@@ -225,8 +211,50 @@ margin-top: 1.55rem;
    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
   }
 
+.block3
+{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+    min-height: 748px; 
+    gap: 3.75vw;
+    color: white;
+    background-color: #404040;
+  }
 
-@media screen and (width < 1150px)
+.about
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    gap: 2.5vw;
+    flex: 1;
+}
+
+.h3
+{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.block3-images
+{
+border-top-right-radius: 30px;
+border-bottom-right-radius: 30px;
+height: 748px;
+width: 748px;
+object-fit: cover; 
+flex-shrink: 1; 
+}
+.block3-about
+{
+font-size: 12px;
+margin-right: 3.75vw;
+}
+
+@media screen and (width < 1250px)
 {
  .header-block-info img
  {
@@ -244,7 +272,28 @@ margin-top: 1.55rem;
 {
   font-size: 30px;
 }
+.block3 {
+  flex-direction: column;
+  gap: 0;
+}
+.about {
+  order: 1; 
+  text-align: center;
+  align-items:center;
+  padding: 1.875rem;
+  gap:1.875rem;
+}
+.block3-images {
+  order: 2; 
+  width: 100%; 
+  height: auto;
+  border-radius: 0;
 
+}
+.block3-about
+{
+  margin: 0;
+}
 }
 
 @media screen and (width < 1020px)
@@ -276,7 +325,7 @@ margin-top: 1.55rem;
 }
 }
 
-@media screen and (width < 769px) {
+@media screen and (width < 768px) {
   .nav {
     display: none;
   }
@@ -306,12 +355,32 @@ margin-top: 1.55rem;
 
   .h2
   {
+    font-size: 24px;
+  }
+  .h3
+  {
+    font-size: 14px;
+  }
+  
+  .about {
+    padding: 6.25vw;
+    gap:6.25vw;
+  }
+}
+@media screen and (width < 350px) {
+
+  .h2
+  {
     font-size: 20px;
+  }
+  .block3-about
+  {
+    font-size: 10px;
   }
   .button
   {
-  height: 50px;
-  width: 230px;
+  height: 3.125rem;
+  width: 14.375rem;
   }
 
 }
