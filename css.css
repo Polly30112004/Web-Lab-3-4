@@ -358,11 +358,82 @@ margin-right: 3.75vw;
   border-radius: 0%;
 }
 
-
 .block5
 {
 background-color:#404040;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 4.38vw;
+gap:4.38vw;
 }
+
+
+.company 
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  max-width: 1050px;
+}
+
+.company-items
+{
+  display: flex;
+  flex-direction: column;
+  gap: 2.19vw;
+
+}
+
+.company-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2.19vw; 
+}
+
+.brand
+{
+  background-color:white;
+  border-radius: 30px;
+  height: 75px;
+  width: 231px; 
+  display: flex;
+  justify-content: center;
+  align-content:center;
+}
+
+.brand img
+{
+width:155px;
+height:76px;
+}
+
+.video
+{
+  height: 24.375vw;
+  width: 42.94vw;
+}
+
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 1.875vw; 
+}
+
+
+.info-item p {
+  font-size: 14px;
+  color: white;
+}
+
+
+
+
+
 
 
 @media screen and (width < 1250px)
@@ -434,6 +505,8 @@ background-color:#404040;
 .block1-inside {
   width: 90%;
 }
+.info-item p 
+{font-size: 12px;}
 }
 
 @media screen and (width < 768px) {
@@ -477,10 +550,6 @@ background-color:#404040;
     padding: 6.25vw;
     gap:6.25vw;
   }
-
-
-
-
 
   .product-card 
   {
@@ -544,6 +613,32 @@ background-color:#404040;
 }
 
 
+.company
+{ 
+  flex-direction: column;
+  gap: 20px;
+}
+.company-items
+{
+order:1;
+align-items:center;
+gap: 20px;
+}
+ .video
+ {
+order:2 ;
+height: auto;
+min-width: 294px;
+ } 
+ .company-info
+ {
+  gap:20px;
+ }
+ .info-item
+ {
+  gap:20px;
+ }
+
 }
 
 @media screen and (width < 350px) {
@@ -561,5 +656,9 @@ background-color:#404040;
   height: 3.125rem;
   width: 14.375rem;
   }
-
+  .video
+  {
+ height: 160px;
+ width: 294px;
+  }
 }
