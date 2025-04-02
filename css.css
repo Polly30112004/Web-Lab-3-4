@@ -526,24 +526,29 @@ height:76px;
 .footer {
   padding-top: 20px;
   color: black;
+  margin: 0 17.19vw; 
 }
 
-.footer-container {
+
+.footer-container 
+{
   display: flex;
   flex-direction: row;
-  justify-content: space-between; /* Равномерно распределяем колонки */
-  align-items: flex-start; /* Выравниваем элементы по верхнему краю */
+  justify-content: space-between; 
+  align-items: flex-start; 
   gap: 9.375vw;
   max-width: 1050px;
-  width: 100%; /* Растягиваем контейнер на всю доступную ширину */
-  margin: 0 auto; /* Центрируем контейнер */
+  width: 100%; 
+
+
 }
 
 .footer-column {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  flex: 1; /* Колонки равномерно занимают пространство */
+  min-width: 143px;
+  flex: 1;
 }
 
 .footer-title {
@@ -551,6 +556,7 @@ height:76px;
   font-weight: 700;
   padding-bottom: 8px;
   color: #E05100;
+  
 }
 
 .footer-item {
@@ -624,6 +630,16 @@ height:76px;
 {
   margin: 0;
 }
+
+.footer
+{margin:0 8vw;}
+
+.footer-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8vw;
+}
+
 }
 
 @media screen and (width < 1020px)
@@ -660,6 +676,15 @@ height:76px;
   grid-template-columns: repeat(2, 1fr); 
   grid-template-rows: auto auto auto; 
 }
+
+.footer
+{
+  margin: 0 50px;
+}
+.footer-container {
+  gap: 30px;
+}
+
 
 }
 
@@ -805,6 +830,28 @@ min-width: 294px;
   padding: 9px;
 }
 
+
+.footer {
+  margin: 0 15.625vw; 
+}
+
+.footer-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.375rem; 
+  width: auto;
+}
+
+
+.footer-title {
+  font-size: 0.75rem; 
+}
+
+.footer-copyright {
+  font-size: 0.625rem; /* 10px -> 0.625rem */
+}
+
+
 }
 
 @media screen and (width < 350px) {
@@ -832,4 +879,14 @@ min-width: 294px;
     width: 255px;
     height: 235px;
   }
+  
+  .footer-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.375rem; /* 22px -> 1.375rem */
+    width: auto;
+    padding: 0 1.5rem;
+}
+
+
 }
