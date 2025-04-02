@@ -433,7 +433,43 @@ height:76px;
 
 
 
+.block6 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  margin: 7.2vw 0;
+  color: black;
+}
 
+.block6-text {
+  font-size: 12px;
+  max-width: 1050px;
+  margin: 0 7.17vw;
+  text-align: center;
+}
+
+.works {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 30px; 
+  max-width: 1050px; 
+  width: 100%;
+}
+
+.block6-img {
+  width: 330px; 
+  height: 300px; 
+  border-radius: 30px; 
+}
+
+
+.block7
+{
+  background-color:#404040;
+}
 
 
 @media screen and (width < 1250px)
@@ -660,5 +696,10 @@ min-width: 294px;
   {
  height: 160px;
  width: 294px;
+  }
+  .block6-img
+  {
+    width: 255px;
+    height: 235px;
   }
 }
